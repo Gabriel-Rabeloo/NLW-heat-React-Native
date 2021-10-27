@@ -1,10 +1,15 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 
-export function Home() {
+import { styles } from './styles';
+import { Header } from '../../components/Header';
+import { MessageList } from '../../components/MessageList';
+
+export const Home = () => {
   return (
-    <View>
-      <Text>Olá React Native</Text>
+    <View style={styles.container}>
+      <Header />
+      <MessageList />
     </View>
   );
-}
+};
